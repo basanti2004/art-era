@@ -1,0 +1,701 @@
+* {
+   padding: 0;
+   margin: 0;
+  }
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding-bottom: 10px;
+}
+nav img {
+    width: 10%;
+    margin-left: 20px;
+}
+.bar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 370px 0px 0px;
+}
+.bar ul li {
+    padding: 10px;
+    font-size: 34px;
+}
+.bar ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Alkatra', cursive;
+font-family: 'Caveat', cursive;
+font-family: 'Mooli', sans-serif;
+}
+.bar ul li a:active {
+    color: grey;
+}
+.bar ul li a.active,
+.bar ul li a:hover {
+    color: grey;
+}
+.dropdown_menu {
+    display: none;
+}
+
+.bar ul li:hover .dropdown_menu {
+    display: block;
+    position: absolute;
+    background-color: rgb(32, 23, 23); 
+    border-radius: 1rem; 
+    left: 22rem;
+}
+.dropdown_menu ul {
+    display: block;
+    margin: 10px;
+}
+.dropdown_menu ul li {
+    padding: 10px;
+}
+
+nav .btn {
+    position: absolute;
+    left: 65rem;
+    
+}
+nav .btn .btn1 {
+   color: black;
+   margin-left: 10rem;
+   align-items: center;
+   padding: 13px;
+   background-color:white;
+   border-radius: 50%;
+}
+nav .btn .btn1:hover {
+    background-color:cadetblue;
+}
+nav .btn .btn2 {
+    color: black;
+   margin-right: 10px;
+   align-items: center;
+   padding: 13px;
+   background-color:white;
+   border-radius: 50%;
+}
+nav .btn .btn2:hover {
+    background-color:cadetblue;
+}
+
+nav .button  {
+   display: flex;
+   flex-direction: row;
+   position: absolute;
+   margin-left: 72rem;
+}
+nav .button a {
+    padding: 10px 20px 10px 20px;
+    font-size: 25px;
+    font-weight: bolder;
+    background-color: white;
+    color: grey;
+    margin: 13px;
+    margin-top: 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-family: 'Alkatra', cursive;
+    font-family: 'Caveat', cursive;
+    font-family: 'Mooli', sans-serif;
+    transition: 0.1s ease;
+}
+nav .button a:hover {
+    background-color: black;
+    color: white;
+}
+
+.img #image {
+    width: 100%;
+    height: 580px;
+    left: 25%;
+    top: 20%;
+    opacity: 1;
+    text-align: center;
+}
+#category h1 {
+    position: absolute;
+    top: 165%;
+    left: 50%;
+}
+
+#category h1 a {
+   align-items: center; 
+   color: black; 
+   border: solid black;
+   display: inline-block;
+   padding: 15px;
+   text-decoration: none;
+   font-family: 'Mooli', sans-serif;
+}
+#category h1 a:hover {
+    color: gray;
+}
+/* category of art */
+#category img {
+    position: absolute;
+    background-color: black;
+}
+#category .container img {
+
+    cursor: pointer;
+    transition: 400ms;
+ }
+#category .container img:hover {
+     filter:brightness(1);
+     transform: scale(1.03);
+ }
+#category .img1 img {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  top: 160%;
+  left: 59%;
+  box-sizing: border-box;
+}
+.img2 img {
+    width: 130px;
+    top: 179%;
+    left: 48.9%;
+    height: 180px;
+}
+.img3 img {
+    width: 140px;
+    height: 200px;
+    top: 131%;
+    left: 48%;
+}
+.img4 img {
+    width: 250px;
+    height: 150px;
+    top: 139%;
+    left: 29%;
+}
+.img5 img {
+    width: 100px;
+    height: 200px;
+    top: 179%;
+    left: 41%;
+}
+.img6 img {
+    width: 130px;
+    height: 200px;
+    top: 128%;
+    left: 59%;
+}
+.img7 img {
+    width: 270px;
+    height: 190px;
+    top: 163%;
+    left: 20.5%;
+}
+.img8 img {
+    width: 250px;
+    height: 130px;
+    top: 192.5%;
+    left: 59%;
+}
+.img9 img {
+    width: 138px;
+    height: 200px;
+    top: 131.4%;
+    left: 18.4%;
+}
+.img10 img {
+  width: 170px;
+  height: 110px;
+  top: 142%;
+  left: 69%;
+}
+.img11 img {
+    width: 130px;
+    height: 160px;
+    top: 193%;
+    left: 31%;
+}
+.img12 img {
+    width: 200px;
+    height: 140px;
+    left: 15.4%;
+    top: 193%;
+}
+.img13 img {
+    width: 190px;
+    height: 150px;
+    left: 74.5%;
+    top: 160%;
+}
+.img14 img {
+    width: 130px;
+    height: 160px;
+    left: 69%;
+    top: 116.5%;
+}
+ /* exibition */
+#exibition .img1 {
+    height: 110vh;
+    width: 100%;
+    background-image: url(./images/flowerimg.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 230%;
+    display: table;
+    background-attachment: fixed;
+}
+#exibition .img1 .container1 {
+    width: 35%;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 130px;
+    margin-left: 600px;
+    padding: 40px 20px;
+  }
+  #exibition .img1 .container1 h3 {
+      font-size: 30px;
+      font-weight: 800;
+      color: rgb(102, 98, 98);
+      padding: 15px 0px 20px 0px;
+      font-family: 'Alkatra', cursive;
+  font-family: 'Caveat', cursive;
+  font-family: 'Mooli', sans-serif;
+  letter-spacing: 2px;
+  }
+  #exibition .img1 .container1 h2 {
+      font-size: 25px;
+      color: rgb(83, 66, 9);
+      padding: 20px 0px;
+  }
+  #exibition .img1 .container1 h2 span {
+      color: white;
+      background-color: black;
+      padding: 5px 15px;
+      margin-left: 5px;
+      font-size: 30px;
+      font-family: 'Alkatra', cursive;
+  font-family: 'Caveat', cursive;
+  font-family: 'Mooli', sans-serif;
+  font-weight: 300;
+  border: solid rgb(159, 189, 190);
+  border-width: 2px;
+  }
+  #exibition .img1 .container1 b {
+      font-size: 25px;
+      font-weight: bolder;
+      padding: 20px 0px;
+      font-family: 'Alkatra', cursive;
+      font-family: 'Caveat', cursive;
+      font-family: 'Mooli', sans-serif;
+  }
+  #exibition .img1 .container1 h1 {
+      font-size: 60px;
+      margin-top: 20px;
+      color: rgb(27, 150, 150);
+  }
+  #exibition .img1 .container1 p {
+      color: rgb(90, 84, 84);
+      font-size: 20px;
+      margin-top: 10px;  
+  }
+  #exibition .img1 .container1 ul li {
+      list-style: none;
+      margin-top: 20px;
+     padding: 15px;
+  }
+  #exibition .img1 .container1 ul li a {
+      text-decoration: none;
+      font-size: 26px;
+      border: 2px solid black;
+      color: rgb(209, 193, 193);
+      padding: 10px;
+      transition: 0.2s ease;
+  }
+  #exibition .img1 .container1 ul li a:hover {
+      color: rgb(51, 182, 160);
+  }
+
+
+#exibition .img2 {
+    height: 110vh;
+    width: 100%;
+    background-image: url(./images/art2.jpg);
+    background-size: cover;
+    background-position: center;   
+    position: absolute;
+    top: 340%;
+    display: table;
+    background-attachment: fixed;
+}
+#exibition .img2 .container1 {
+    width: 35%;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 130px;
+    margin-left: 600px;
+    padding: 40px 20px;
+  }
+  #exibition .img2 .container1 h3 {
+      font-size: 30px;
+      font-weight: 800;
+      color: rgb(102, 98, 98);
+      padding: 15px 0px 20px 0px;
+      font-family: 'Alkatra', cursive;
+  font-family: 'Caveat', cursive;
+  font-family: 'Mooli', sans-serif;
+  letter-spacing: 2px;
+  }
+  #exibition .img2 .container1 h2 {
+      font-size: 25px;
+      color: rgb(83, 66, 9);
+      padding: 20px 0px;
+  }
+  #exibition .img2 .container1 h2 span {
+      color: white;
+      background-color: black;
+      padding: 5px 15px;
+      margin-left: 5px;
+      font-size: 30px;
+      font-family: 'Alkatra', cursive;
+  font-family: 'Caveat', cursive;
+  font-family: 'Mooli', sans-serif;
+  font-weight: 300;
+  border: solid rgb(159, 189, 190);
+  border-width: 2px;
+  }
+  #exibition .img2 .container1 b {
+      font-size: 30px;
+      letter-spacing: 1px;
+      font-weight: bolder;
+      padding: 20px 0px;
+      font-family: 'Alkatra', cursive;
+      font-family: 'Caveat', cursive;
+      font-family: 'Mooli', sans-serif;
+  }
+  #exibition .img2 .container1 h1 {
+      font-size: 80px;
+      letter-spacing: 1px;
+      margin-top: 20px;
+      color: rgb(27, 150, 150);
+  }
+  #exibition .img2 .container1 p {
+      color: rgb(90, 84, 84);
+      font-size: 20px;
+      margin-top: 10px;  
+  }
+  #exibition .img2 .container1 ul li {
+      list-style: none;
+      margin-top: 20px;
+     padding: 15px;
+  }
+  #exibition .img2 .container1 ul li a {
+      text-decoration: none;
+      font-size: 26px;
+      border: 2px solid black;
+      color: rgb(209, 193, 193);
+      padding: 10px;
+      transition: 0.3s ease;
+  }
+  #exibition .img2 .container1 ul li a:hover {
+      color: rgb(51, 182, 160);
+  }
+
+  
+  #exibition .img3 {
+    height: 110vh;
+    width: 100%;
+    background-image: url(./images/girl.jpg);
+    background-size: cover;
+    background-position: center;   
+    position: absolute;
+    top: 340%;
+    display: table;
+    background-attachment: fixed;
+}
+#exibition .img3 .container1 {
+    width: 35%;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 130px;
+    margin-left: 600px;
+    padding: 40px 20px;
+  }
+  #exibition .img3 .container1 h3 {
+      font-size: 30px;
+      font-weight: 800;
+      color: rgb(102, 98, 98);
+      padding: 15px 0px 20px 0px;
+      font-family: 'Alkatra', cursive;
+  font-family: 'Caveat', cursive;
+  font-family: 'Mooli', sans-serif;
+  letter-spacing: 2px;
+  }
+  #exibition .img3 .container1 h2 {
+      font-size: 25px;
+      color: rgb(83, 66, 9);
+      padding: 20px 0px;
+  }
+  #exibition .img3 .container1 h2 span {
+      color: white;
+      background-color: black;
+      padding: 5px 15px;
+      margin-left: 5px;
+      font-size: 30px;
+      font-family: 'Alkatra', cursive;
+  font-family: 'Caveat', cursive;
+  font-family: 'Mooli', sans-serif;
+  font-weight: 300;
+  border: solid rgb(159, 189, 190);
+  border-width: 2px;
+  }
+  #exibition .img3 .container1 b {
+      font-size: 30px;
+      letter-spacing: 1px;
+      font-weight: bolder;
+      padding: 20px 0px;
+      font-family: 'Alkatra', cursive;
+      font-family: 'Caveat', cursive;
+      font-family: 'Mooli', sans-serif;
+  }
+  #exibition .img3 .container1 h1 {
+      font-size: 80px;
+      letter-spacing: 1px;
+      margin-top: 20px;
+      color: rgb(27, 150, 150);
+  }
+  #exibition .img3 .container1 p {
+      color: rgb(90, 84, 84);
+      font-size: 20px;
+      margin-top: 10px;  
+  }
+  #exibition .img3 .container1 ul li {
+      list-style: none;
+      margin-top: 20px;
+     padding: 15px;
+  }
+  #exibition .img3 .container1 ul li a {
+      text-decoration: none;
+      font-size: 26px;
+      border: 2px solid black;
+      color: rgb(209, 193, 193);
+      padding: 10px;
+      transition: 0.3s ease;
+  }
+  #exibition .img3 .container1 ul li a:hover {
+      color: rgb(51, 182, 160);
+  }
+  
+
+
+
+/* accountCreate */
+#account .container{
+   display: flex;
+   flex-direction: row;
+   margin: 70px;
+   margin-top: 170rem;
+  box-shadow: 2px 2px 2px 2px black;
+}
+#account .container .image img {
+    width: 220%;
+    height: 550px;
+}
+#account .container .content {
+   align-items: flex-start;
+  
+   margin-left: 270px;
+}
+#account .container .content .part {
+    padding-bottom: 30px;
+}
+#account .container .content .part h1 {
+    font-size: 40px;
+    font-family: 'Alkatra', cursive;
+    font-family: 'Caveat', cursive;
+    font-family: 'Mooli', sans-serif;
+    font-weight: bolder;
+    color:cadetblue;
+    padding: 15px;
+}
+#account .container .content .part h2 {
+    font-size: 25px;
+    padding-bottom: 20px;
+    font-family: 'Alkatra', cursive;
+    font-family: 'Caveat', cursive;
+    font-family: 'Mooli', sans-serif;
+    flex-wrap: wrap;
+}
+#account .container .content .part a {
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px 20px;
+    background-color:darkgoldenrod;
+    color: white;
+    border-radius: 20px;
+    margin-top: 20px;
+    transition: 0.2s ease;
+}
+#account .container .content .part a:hover {
+    background-color: white;
+    color: #f0b30a;
+}
+
+
+/* course */
+#course .display {
+    display: flex;
+    flex-direction: row;
+   margin: 90px 70px 70px 70px;
+   box-shadow: 2px 2px 2px 2px black;
+   margin-top: 100px;
+}
+#course .display .img img {
+    padding-top: 1rem;
+   
+    width: 160%;
+    height:700px;
+}
+#course .display .content {
+    margin-left: 15rem;
+    font-family: 'Alkatra', cursive;
+    font-family: 'Caveat', cursive;
+    font-family: 'Mooli', sans-serif;
+}
+#course .display .content h1 {
+    font-size: 40px;
+    color:darkcyan;
+    padding: 10px;
+}
+#course .display .content h2 {
+    font-size: 27px;
+    color:chocolate;
+    padding: 10px;
+}
+#course .display .content p {
+    font-size: 20px;
+    color: #606264;
+    margin-left: 40px;
+}
+#course .display .content h3 {
+    font-size: 25px;
+    color:gray;
+    margin-left: 40px;
+    font-weight: 400;
+}
+#course .display .content .register {
+     margin-top: 30px;
+     margin-left: 150px;
+    
+}
+#course .display .content .register a {
+    text-decoration: none;
+    font-size: 25px;
+    background-color:white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid rgb(39, 39, 39);
+    color: black;
+}
+#course .display .content .register a:hover {
+    color: brown;
+    background-color: white;
+}
+
+
+
+
+/*footer*/
+footer {
+    margin-top: 10rem;
+    background: black;
+    padding: 8vw;
+ }
+ footer .foot-col {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+ }
+ footer .footer-col {
+    padding-bottom: 40px;
+ }
+ footer h3 {
+    color: white;
+    font-weight: 600;
+    padding-bottom: 20px;
+ }
+ footer p {
+    list-style: none;
+    color: #7b838a;
+    cursor: pointer;
+    padding: 10px 0;
+    font-size: 15px;
+    transition: 0.3s ease;
+ }
+ footer p:hover {
+    color: white;
+ }
+ footer .footer-col li {
+    list-style: none;
+    color:white;
+ }
+ footer .subscribe {
+    margin-top: 25px;
+ }
+ footer .subscribe input {
+    color: black;
+ }
+ footer input {
+    width: 250px;
+    padding:15px 12px;
+    border: none;
+    outline: none;
+    color: white;
+ }
+ footer a {
+    text-decoration: none;
+     font-size: 20px;
+     padding: 9px 15px;
+     background-color: white;
+     font-weight: 600;
+ }
+ footer a.yellow {
+    color: black;
+    background-color: #f0b30a;
+    transition: 0.2s ease;
+ }
+ footer a.yellow:hover {
+    color: black;
+    background-color: rgb(115, 189, 183);
+ }
+  footer .copyright {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ footer .copyright b {
+    color: white;
+    font-weight: 400;
+ }
+ footer .copyright .links i {
+    padding: 10px 10px;
+    border: 1px solid rgb(189, 189, 212);
+    cursor: pointer;
+    color: white;
+    background: gray;
+ }
+ footer .copyright .links i:hover {
+    color: black;
+    background: yellow;
+ }
+
